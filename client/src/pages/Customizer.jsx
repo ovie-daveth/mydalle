@@ -53,7 +53,7 @@ const Customizer = () => {
     try {
       setGeneratingImg(true);
 
-      const response = await fetch('https://dalle2-0-vdl5.onrender.com/generate', {
+      const response = await fetch('https://dalle2-0-vdl5.onrender.com/api/v1/dalle/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
